@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReloadiYT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reloadi<span>YT</span></h1>
+        <input type="text" id="youtube-url" placeholder="Enter YouTube URL">
+        <button id="load-video">Load Video</button>
+        <div id="player-container">
+            <div id="player"></div>
+        </div>
+        <div class="controls">
+            <div>
+                <span>Start Time: <span id="start-time-display">00:00</span></span>
+                <button id="set-start-time">Set Start Time</button>
+            </div>
+            <div>
+                <span>End Time: <span id="end-time-display">00:00</span></span>
+                <button id="set-end-time">Set End Time</button>
+            </div>
+            <button id="set-loop">Set Loop</button>
+            <button class = "reset" id="reset-loop">Reset</button> <!-- New Reset Button -->
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
